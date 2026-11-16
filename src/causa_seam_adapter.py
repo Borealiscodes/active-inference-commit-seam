@@ -18,7 +18,6 @@ from active_inference_seam import (
     CommitLedger,
     ExploratoryProposer,
     ObservedChunk,
-    StagedProposal,
 )
 
 try:
