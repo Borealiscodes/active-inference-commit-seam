@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "active-inference-commit-seam"
+version = "0.1.0"
+description = "Zero-dependency bridge separating exploratory active inference (Salience Δ, Resonance Φ) from a fail-closed cryptographic commit ledger, with an optional CAUSA telemetry adapter."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Borealis Serenity Hedling" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+# Note: stell2026/Causa is governed by the CAUSA Non-Commercial License 1.1
+research = [
+  "causa @ git+https://github.com"
+]
